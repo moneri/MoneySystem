@@ -1,0 +1,12 @@
+---
+132:4:124:world:
+  x: 132
+  "y": 4
+  z: 124
+  level: world
+  Item: 1
+  ItemName: 0
+  Meta: 0
+  money: 1
+  amount: 1
+...
