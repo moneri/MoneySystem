@@ -1,0 +1,91 @@
+---
+126:4:130:world:
+  x: 126
+  "y": 4
+  z: 130
+  level: world
+  Item: 1
+  Meta: 0
+  price: 1
+  amount: "1"
+127:4:130:world:
+  x: 127
+  "y": 4
+  z: 130
+  level: world
+  Item: 1
+  ItemName: 0
+  Meta: 0
+  money: 1
+  amount: 0
+127:4:128:world:
+  x: 127
+  "y": 4
+  z: 128
+  level: world
+  Item: 1
+  ItemName: 0
+  Meta: 0
+  money: 1
+  amount: 1
+128:4:129:world:
+  x: 128
+  "y": 4
+  z: 129
+  level: world
+  Item: 1
+  ItemName: 0
+  Meta: 0
+  money: 1
+  amount: 1
+126:4:127:world:
+  x: 126
+  "y": 4
+  z: 127
+  level: world
+  Item: 1
+  ItemName: 0
+  Meta: 0
+  money: 1
+  amount: 1
+127:4:127:world:
+  x: 127
+  "y": 4
+  z: 127
+  level: world
+  Item: 1
+  ItemName: 0
+  Meta: 0
+  money: 1
+  amount: 1
+129:4:127:world:
+  x: 129
+  "y": 4
+  z: 127
+  level: world
+  Item: 1
+  ItemName: 0
+  Meta: 0
+  money: 1
+  amount: 1
+129:4:128:world:
+  x: 129
+  "y": 4
+  z: 128
+  level: world
+  Item: 1
+  ItemName: 0
+  Meta: 0
+  money: 1
+  amount: 1
+131:4:129:world:
+  x: 131
+  "y": 4
+  z: 129
+  level: world
+  Item: 1
+  ItemName: 0
+  Meta: 0
+  money: 1
+  amount: 5
+...
