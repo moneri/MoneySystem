@@ -1,0 +1,19 @@
+name: CustomName
+main: CustomName\main
+version: 1.6.9
+api: 1.3.0
+author: metowa1227
+commands:
+  setname:
+    description: プレイヤーのネームタグをカスタムします。
+    usage: /name <CustomName>
+    permission: name.cmd.set
+  unsetname:
+    description: プレイヤーのネームタグをリセットします。
+    usage: /unsetname
+    permission: name.cmd.unset
+permissions:
+  name.cmd.set:
+    default: true
+  name.cmd.unset:
+    default: true
