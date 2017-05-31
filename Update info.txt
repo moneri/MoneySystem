@@ -1,0 +1,83 @@
+MoneyAddedEvent
+
+所持金を増やされたときに発生します。
+
+利用可能な関数
+
+(MoneyAddedEvent を $event で定義済み)
+
+$event->getPlayer();   //お金を増やされたプレイヤーを取得。 返り値は Player object
+$event->getIssuer();   //お金を増やしたプレイヤー(プレイヤー名)を取得。 返り値は string
+$event->getAmount()   //増やされた金額を取得。 返り値は integer
+$event->getType();   //タイプを取得。(コマンド(/pay, /addmoney)で増やされた場合、 pay.command, addmoney.command が返ってきます。 ほかのプラグインから増やされた場合、 other.plugin が返ってきます。 上記の2つに当てはまらない場合、 Event is undefined type の Exception のリカバリ不能な (E-Exception級) エラーが発生します。
+
+SampleCode
+[PHP]function onAdd(MoneyAddedEvent $event){
+$player = $event->getPlayer();
+$issuer = $event->getIssuer();
+$amount = $event->getAmount();
+$type = $event->getType();
+$this->getLogger()->info($issuer."による type: ".$type." のADD。 金額: ".$amount." 増やされた人: ".$player->getName()." イベントをキャンセルしました。");
+if(!$event->isCancelled() and $type == "other.plugin"){
+$event->setCancelled();
+}
+}[/PHP]
+
+
+Update!
+MoneySystemAPI version 4.5.0
+待望(?)の超超超大型アップデート!
+・Check関数を利用しても、所持金の返り値が帰ってこない致命的なバグを修正。
+・さまざまなバグをかなり修正。
+・CreateAccount関数を追加!
+・Check関数に必要な情報を、プレイヤーの名前から、プレイヤーオブジェクトに変更しました。
+・RemoveAccount関数を追加!
+・ブラッシュアップをしました。
+・コードをかなり見やすくしました。(開発者への心がけ)
+・プラグインの無効化時・サーバーの停止時にデータをセーブするように。
+・最大まで所持できる金額が、$999999999999999から、$999999999999に変更(最大金額所持していた場合のエラー回避)
+・プラグインの読み込み時にデータの読み込みを行い、失敗した場合、エラーを表示するように。
+・データのセキュリティチェックを実行するように。
+・コンソールにも所持金要素を追加。(毎回起動するたびに$999999999999に設定)
+・/payコマンドでお金を送った場合、送金先のプレイヤーがログインしていなかった場合、そのプレイヤーがログインしたときにお金が渡されるようにしました。
+・プラグインの詳細を細かく変更。
+・TakeMoneyやSetMoneyを利用し、所持金が0以下になると、所持金がマイナス表示になってしまうバグを修正。
+・無駄なコードを削除しました。
+
+MoneySystemAPI version 5.0.0
+・デフォルト金額要素を追加しました。デフォルト金額が、初回ログイン時に配布されます。
+・setAllDefaultMoney関数を追加しました。
+・setAllCustomMoney関数を追加しました。
+・getDefaultMoney関数を追加しました。
+・setDefaultMoney関数を追加しました。
+・setPlayerDefaultMoney関数を追加しました。
+・新たなConfig(設定ファイル)を追加しました。
+
+MoneySystemAPI version 6.0.0
+・BackupFiles関数を追加しました。
+・files_exists関数を追加しました。
+・BackedupFiles関数を追加しました。
+・isEnable関数を追加しました。
+・コードをかなりきれいにしました。
+・動作がより軽くなりました。
+・コードを少々変更しました。
+・Configファイルのバグを修正しました。
+・mystatusコマンドを追加しました。
+・細かいバグを修正しました。
+・不要なコードを削除しました。
+
+MoneySystemAPI version 7.3.5 (超超大型アップデート)
+・かなり軽量化しました。
+・コードを整形しました。
+・イベントを追加しました。(詳しくは イベント・プラグインの性質 をご覧ください。)
+・/addmoney /setmoney /take 時の最大金額無視エラーを回避しました。
+・数々の関数を追加しました。
+・多言語に対応しました。
+・様々なコマンドを追加しました。
+・よりAPIが賢くなりました。
+・様々なエラー回避に対応しました。
+・従来のAPIよりも、大幅に安定、高速化されました。
+・お金の通貨を自分で設定できるようになりました。
+・/moneyrank /mystatus コマンドで、OP権限者は結果に含まれないようにしました。
+・/addmoney /setmoney /take /pay コマンドでの、ある一定の数値以上の数を入力した場合に発生するエラーを改善しました。
+・セキュリティを強化しました。

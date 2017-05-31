@@ -1,0 +1,84 @@
+イベント・プラグインの性質
+イベント(Event)の性質
+
+MoneySystem ver 7.3.5 からイベント(Event)が追加されました。これで大幅に開発の幅が広がることでしょう。
+
+MoneyAddedEvent
+
+所持金を増やされたときに発生します。
+
+利用可能な関数
+
+(MoneyAddedEvent を $event で定義済み)
+
+$event->getPlayer();   //お金を増やされたプレイヤーを取得。 返り値は Player object
+$event->getIssuer();   //お金を増やしたプレイヤー(プレイヤー名)を取得。 返り値は string
+$event->getAmount()   //増やされた金額を取得。 返り値は integer
+$event->getType();   //タイプを取得。(コマンド(/pay, /addmoney)で増やされた場合、 pay.command, addmoney.command が返ってきます。 ほかのプラグインから増やされた場合、 other.plugin が返ってきます。 上記の2つに当てはまらない場合、 Event is undefined type の Exception のリカバリ不能な (E-Exception級) エラーが発生します。
+
+MoneyTakedEvent
+
+
+所持金を減らされたときに発生します。
+
+
+利用可能な関数
+
+
+(MoneyTakedEvent を $event で定義済み)
+
+
+$event->getPlayer();   //お金を減らされたプレイヤーを取得。 返り値は Player object
+$event->getIssuer();   //お金を減らしたプレイヤー(プレイヤー名)を取得。 返り値は string
+$event->getAmount()   //減らされた金額を取得。 返り値は integer
+$event->getType();   //タイプを取得。(コマンド(/pay, /take)で増やされた場合、 pay.command, takemoney.command が返ってきます。 ほかのプラグインから増やされた場合、 other.plugin が返ってきます。 上記の2つに当てはまらない場合、 Event is undefined type の Exception のリカバリ不能な (E-Exception級) エラーが発生します。
+
+MoneySettedEvent
+
+
+所持金をセットされたときに発生します。
+
+
+利用可能な関数
+
+
+(MoneySettedEvent を $event で定義済み)
+
+
+$event->getPlayer();   //お金をセットされたプレイヤーを取得。 返り値は Player object
+$event->getIssuer();   //お金をセットしたプレイヤー(プレイヤー名)を取得。 返り値は string
+$event->getAmount()   //セットされた金額を取得。 返り値は integer
+$event->getType();   //タイプを取得。(コマンド(/pay, /setmoney)で増やされた場合、 pay.command, setmoney.command が返ってきます。 ほかのプラグインから増やされた場合、 other.plugin が返ってきます。 上記の2つに当てはまらない場合、 Event is undefined type の Exception のリカバリ不能な (E-Exception級) エラーが発生します。
+
+MoneyChangedEvent
+
+
+所持金を変更されたときに発生します。
+
+
+利用可能な関数
+
+
+(MoneySettedEvent を $event で定義済み)
+
+
+$event->getPlayerName();   //お金を変更されたプレイヤー名を取得。 返り値は string
+$event->getIssuer();   //お金を変更したプレイヤー(プレイヤー名)を取得。 返り値は string
+$event->getAmount()   //変更された金額を取得。 返り値は integer
+$event->getType();   //タイプを取得。(コマンド(/pay, /addmoney, /setmoney, /takemoney)で増やされた場合、 pay.command, addmoney.command, setmoney.command, takemoney.command が返ってきます。 ほかのプラグインから増やされた場合、 other.plugin が返ってきます。 上記の2つに当てはまらない場合、 Event is undefined type の Exception のリカバリ不能な (E-Exception級) エラーが発生します。
+
+SampleCode
+
+[PHP]function onAdd(MoneySettedEvent $event){
+$player = $event->getPlayerName();
+$issuer = $event->getIssuer();
+$amount = $event->getAmount();
+$type = $event->getType();
+if($type == "addmoney.command"){
+$this->getLogger()->info($issuer."による type: ".$type." のADD。 金額: ".$amount." 増やされた人: ".$player." イベントをキャンセルしました。");
+}
+if(!$event->isCancelled() and $type == "addmoney.command" or $type == "other.plugin"){
+$event->setCancelled();
+}
+}
+[/PHP]

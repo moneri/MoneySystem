@@ -1,0 +1,109 @@
+まず、use文に
+use metowa1227\MoneySystemAPI\MoneySystemAPI;
+を追加して下さい。
+※パスが変わりました。
+
+次に、public function onEnable(){に、
+$this->Money = $this->getServer()->getPluginManager()->getPlugin("MoneySystemAPI");
+を追加して下さい。
+※MoneySystemAPI::getInstance()を利用する方は書かなくてもいいです。
+
+関数の利用法
+AddMoney($player, $amount);
+とあったら、
+$this->Money->AddMoney($player, $amount);
+※MoneySystemAPI::getInstance()->AddMoney($player, $amount);でも可。
+となります。
+
+AddMoney($player, $amount);を例とすると、第一因数($playerのところ)が $player ならプレイヤーオブジェクトを入れる。 $name と記述されていたら、プレイヤーネームを入れてください。
+第二因数($amountのところ)が基本的に金額になります。 (一部は $money と記述されていますが、金額を記入してください。) 変数に入れてもいいですし、
+AddMoney($player, 10000);
+でも可能です。
+
+お金を追加する(プレイヤーオブジェクト)
+MoneySystem ver 6.0.0 以前 >> AddMoney($name, $amount);
+MoneySystem ver 6.0.0以降 >> AddMoney($player, $amount);
+
+お金を追加する(プレイヤーネーム)
+MoneySystem ver 7.3.5 以降 >> AddMoneyForName($name, $amount);
+MoneySystem ver 7.3.5 以前 >> 利用不可
+
+お金を没収する(プレイヤーオブジェクト)
+MoneySystem ver 6.0.0 以前 >> TakeMoney($name, $amount);
+MoneySystem ver 6.0.0 以降 >> TakeMoney($player, $amount);
+
+お金を没収する(プレイヤーネーム)
+MoneySystem ver 7.3.5 以降 >> TakeMoneyForName($name, $amount);
+MoneySystem ver 7.3.5 以前 >> 利用不可
+
+お金をセットする(プレイヤーオブジェクト)
+MoneySystem ver 6.0.0 以前 >> SetMoney($name, $amount);
+MoneySystem ver 6.0.0 以降 >> SetMoney($player, $amount);
+
+お金をセットする(プレイヤーネーム)
+MoneySystem ver 7.3.5 以降 >> SetMoneyForName($name, $amount);
+MoneySystem ver 7.3.5 以前 >> 利用不可
+
+お金を確認する(プレイヤーオブジェクト)
+MoneySystem ver 4.5.0 以前 >> Check($name);
+MoneySystem ver 4.5.0 以降 >> Check($player);
+
+お金を取得する(プレイヤーネーム)
+MoneySystem ver 7.3.5 以降 >> CheckForName($name);
+MoneySystem ver 7.3.5 以前 >> 利用不可
+
+アカウントを作成
+MoneySystem ver 4.5.0 以降 >> CreateAccount($player, $money);
+MoneySystem ver 6.0.0 以降 >> CreateAccount($name, $money);
+MoneySystem ver 4.5.0 以前 >> 利用不可
+
+アカウントを削除
+MoneySystem ver 4.5.0 以降 >> RemoveAccount($player);
+MoneySystem ver 6.0.0 以降 >> RemoveAccount($name);
+MoneySystem ver 4.5.0 以前 >> 利用不可
+
+お金を表示するときに必要な文字(単位/通貨単位)を取得
+MoneySystem ver 4.5.0 以降 >> getMonitorUnit();
+MoneySystem ver 4.5.0 以前 >> 利用不可
+
+デフォルト金額を取得
+MoneySystem ver 5.0.0 以降 >> getDefaultMoney();
+MoneySystem ver 5.0.0 以前 >> 利用不可
+
+デフォルト金額を設定
+MoneySystem ver 5.0.0 以降 >> setDefaultMoney($money);
+MoneySystem ver 5.0.0 以前 >> 利用不可
+
+プレイヤー全員の所持金をデフォルト金額に設定
+MoneySystem ver 5.0.0 以降 >> setAllDefaultMoney();
+MoneySystem ver 5.0.0 以前 >> 利用不可
+
+プレイヤーの所持金をデフォルト金額に設定
+MoneySystem ver 5.0.0 以降 >> setPlayerDefaultMoney($player);
+MoneySystem ver 5.0.0 以前 >> 利用不可
+
+プレイヤー全員の所持金を任意の金額に設定
+MoneySystem ver 5.0.0 以降 >> setAllCustomMoney($money);
+MoneySystem ver 5.0.0 以前 >> 利用不可
+
+プラグインのデータファイルをすべてバックアップする
+MoneySystem ver 6.0.0 以降 >> BackupFiles();
+MoneySystem ver 6.0.0 以前 >> 利用不可
+
+プラグインのデータファイルが存在するかを確認する
+MoneySystem ver 6.0.0 以降 >> files_exists();
+MoneySystem ver 6.0.0 以前 >> 利用不可
+
+バックアップファイルが存在するかを確認する
+MoneySystem ver 6.0.0 以降 >> BackedupFiles();
+MoneySystem ver 6.0.0 以前 >> 利用不可
+
+プラグインが作動しているかを確認する
+MoneySystem ver 6.0.0 以降 >> isEnable();
+MoneySystem ver 6.0.0 以前 >> 利用不可
+
+デフォルト金額は、上の関数からでも変更できますし、Config.ymlから設定可能です。※MoneySystem ver 5.0.0 以降
+
+通貨の単位が MoneySystem ver 7.3.5 から設定可能になりました。Config.ymlから設定可能です。
+
+メッセージは 言語.yml から設定可能ですが、あまり弄らないことをお勧めします。意味不明になります。 ※MoneySystem ver 7.3.5 以降
