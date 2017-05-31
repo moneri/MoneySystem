@@ -62,6 +62,22 @@ MoneySystem ver 4.5.0 以降 >> RemoveAccount($player);
 MoneySystem ver 6.0.0 以降 >> RemoveAccount($name);
 MoneySystem ver 4.5.0 以前 >> 利用不可
 
+プレイヤーの利用している言語を取得
+MoneySystem ver 7.3.5 以降 >> getDefaultLang($name);
+MoneySystem ver 7.3.5 以前 >> 利用不可
+
+所持金データをすべて取得
+MoneySystem ver 7.3.5 以降 >> getAllMoneyData();
+MoneySystem ver 7.3.5 以前 >> 利用不可
+
+アカウントが存在するかを確認(プレイヤーオブジェクト)
+MoneySystem ver 7.3.5 以降 >> ExistsAccount($player);
+MoneySystem ver 7.3.5 以前 >> 利用不可
+
+アカウントが存在するかを確認(プレイヤーネーム)
+MoneySystem ver 7.3.5 以降 >> ExistsAccountForName($name);
+MoneySystem ver 7.3.5 以前 >> 利用不可
+
 お金を表示するときに必要な文字(単位/通貨単位)を取得
 MoneySystem ver 4.5.0 以降 >> getMonitorUnit();
 MoneySystem ver 4.5.0 以前 >> 利用不可
