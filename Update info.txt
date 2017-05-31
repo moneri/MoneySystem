@@ -1,29 +1,3 @@
-MoneyAddedEvent
-
-所持金を増やされたときに発生します。
-
-利用可能な関数
-
-(MoneyAddedEvent を $event で定義済み)
-
-$event->getPlayer();   //お金を増やされたプレイヤーを取得。 返り値は Player object
-$event->getIssuer();   //お金を増やしたプレイヤー(プレイヤー名)を取得。 返り値は string
-$event->getAmount()   //増やされた金額を取得。 返り値は integer
-$event->getType();   //タイプを取得。(コマンド(/pay, /addmoney)で増やされた場合、 pay.command, addmoney.command が返ってきます。 ほかのプラグインから増やされた場合、 other.plugin が返ってきます。 上記の2つに当てはまらない場合、 Event is undefined type の Exception のリカバリ不能な (E-Exception級) エラーが発生します。
-
-SampleCode
-[PHP]function onAdd(MoneyAddedEvent $event){
-$player = $event->getPlayer();
-$issuer = $event->getIssuer();
-$amount = $event->getAmount();
-$type = $event->getType();
-$this->getLogger()->info($issuer."による type: ".$type." のADD。 金額: ".$amount." 増やされた人: ".$player->getName()." イベントをキャンセルしました。");
-if(!$event->isCancelled() and $type == "other.plugin"){
-$event->setCancelled();
-}
-}[/PHP]
-
-
 Update!
 MoneySystemAPI version 4.5.0
 待望(?)の超超超大型アップデート!
