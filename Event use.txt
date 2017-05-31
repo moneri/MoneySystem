@@ -69,16 +69,26 @@ $event->getType();   //タイプを取得。(コマンド(/pay, /addmoney, /se
 
 SampleCode
 
-[PHP]function onAdd(MoneySettedEvent $event){
-$player = $event->getPlayerName();
-$issuer = $event->getIssuer();
-$amount = $event->getAmount();
-$type = $event->getType();
-if($type == "addmoney.command"){
-$this->getLogger()->info($issuer."による type: ".$type." のADD。 金額: ".$amount." 増やされた人: ".$player." イベントをキャンセルしました。");
+function onAdd(MoneySettedEvent $event){
+  $player = $event->getPlayerName();
+  $issuer = $event->getIssuer();
+  $amount = $event->getAmount();
+  $type = $event->getType();
+  if($type == "addmoney.command"){
+  $this->getLogger()->info($issuer."による type: ".$type." のADD。 金額: ".$amount." 増やされた人: ".$player." イベントをキャンセルしました。");
+  }
+  if(!$event->isCancelled() and $type == "addmoney.command" or $type == "other.plugin"){
+  $event->setCancelled();
+  }
 }
-if(!$event->isCancelled() and $type == "addmoney.command" or $type == "other.plugin"){
-$event->setCancelled();
-}
-}
-[/PHP]
+
+
+プラグイン(plugin)の性質
+
+AddMoney AddMoneyForName TakeMoney TakeMoneyForName SetMoney SetMoneyForName CreateAccount RemoveAccount setPlayerDefaultMoney setPlayerDefaultMoneyForName setAllDefaultMoney setDefaultMoney ExistsAccount ExistsAccountForName setAllCustomMoney isEnable BackupFiles は返り値が bool
+
+Check CheckForName getDefaultMoney は返り値が integar
+
+files_exists BackedupFiles getMonitorUnit getDefaultLang は返り値が string
+
+getAllMoneyData は返り値が array
