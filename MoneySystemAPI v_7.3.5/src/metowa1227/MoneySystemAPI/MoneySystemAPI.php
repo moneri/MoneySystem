@@ -506,7 +506,7 @@ class MoneySystemAPI extends PluginBase implements Listener{
 
     public function TakeMoney(Player $player, $amount, $type = "other.plugin", $issuer = "undefined issuer") : bool{
         $user = $player->getName();
-        if($this->Money->exists($name)){
+        if($this->Money->exists($user)){
             if(!is_numeric($amount)){
                 return false;
             }else{
