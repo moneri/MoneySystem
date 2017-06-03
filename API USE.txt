@@ -22,7 +22,7 @@ AddMoney($player, 10000);
 
 お金を追加する(プレイヤーオブジェクト)
 MoneySystem ver 6.0.0 以前 >> AddMoney($name, $amount);
-MoneySystem ver 6.0.0以降 >> AddMoney($player, $amount);
+MoneySystem ver 6.0.0 以降 >> AddMoney($player, $amount);
 
 お金を追加する(プレイヤーネーム)
 MoneySystem ver 7.3.5 以降 >> AddMoneyForName($name, $amount);
