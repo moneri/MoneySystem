@@ -55,3 +55,11 @@ MoneySystemAPI version 7.3.5 (超超大型アップデート)
 ・/moneyrank /mystatus コマンドで、OP権限者は結果に含まれないようにしました。
 ・/addmoney /setmoney /take /pay コマンドでの、ある一定の数値以上の数を入力した場合に発生するエラーを改善しました。
 ・セキュリティを強化しました。
+
+MoneySystemAPI version 8.0.0
+・BackupFilesで発生する不具合を修正しました。
+・動作がより安定しました。
+・動作がより高速になりました。
+・微小な不具合を修正しました。
+・オートアップデートチェッカー機能を搭載しました。(AutoUpdateChecker)
+・オートアップデートデスクリプションビューアーを搭載しました。(AutoUpdateDesctiptionViewer)
