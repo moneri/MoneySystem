@@ -1,3 +1,4 @@
+
 Update!
 MoneySystemAPI version 4.5.0
 待望(?)の超超超大型アップデート!
@@ -63,3 +64,5 @@ MoneySystemAPI version 8.0.0
 ・微小な不具合を修正しました。
 ・オートアップデートチェッカー機能を搭載しました。(AutoUpdateChecker)
 ・オートアップデートデスクリプションビューアーを搭載しました。(AutoUpdateDesctiptionViewer)
+・オートコンフィグアップデーターを搭載しました。(AutoConfigUpdater)
+>>Configのバージョンアップが発生します。ですが、上の機能により、自動的に更新されますので、基本的には弄る必要はありません。(Configファイルの内容は変更されません。)
