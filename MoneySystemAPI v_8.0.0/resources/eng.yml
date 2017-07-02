@@ -1,0 +1,57 @@
+lang.name: 'English'
+
+join.pay: 'You have received %MONITORUNIT%%AMOUNT% from %GIVEN%.'
+join.new.player: 'The first login gave %MONITORUNIT%%AMOUNT%.'
+
+console.not.command: 'This command can not be run from the console.'
+not.permission: 'You are not authorized to execute this command.'
+
+mymoney: 'Your money is %MONITORUNIT%%MONEY% .'
+
+see.tergetname.not.set: 'Please enter the name of the player who will confirm the possession money.'
+see.tergetplayer.not.found: 'Information on the specified player could not be found.'
+see.terget.money: '%TERGET% s possession is %MONITORUNIT%%MONEY%.'
+
+pay.tergetname.not.set: 'Please enter the name of the player who will give you money.'
+pay.tergetplayer.not.found: 'Information on the specified player could not be found.'
+pay.amount.not.set: 'Please enter the amount to be granted.'
+pay.amount.not.numeric: 'Please enter a number to give.'
+pay.myself.error: 'You can not grant yourself.'
+pay.decimal.error: 'You can not set decimal fractions to the amount to be granted.'
+pay.lack.money.error: 'Possession money is running short.'
+pay.0.or.less: 'Please set the amount to be added at %MONITORUNIT%0 or more.'
+pay.success.1: '%MONITORUNIT%%AMOUNT% was added to %TERGET%.'
+pay.success.2: 'Since %TERGET% is currently offline, it is granted at the next login.'
+pay.success.3: '%MONITORUNIT%%AMOUNT% was added to %USER% => %TERGET%.'
+pay.success.4: 'We received %MONITORUNIT%%AMOUNT% from %USER%.'
+pay.success.5: '[CONSOLE MONEY SYSTEM] %MONITORUNIT%%AMOUNT% has been added to %TERGET%.'
+
+status.view: 'Your current status: %STATUS%%'
+
+addmoney.tergetname.not.set: 'Please enter the name of the player who will give you money.'
+addmoney.tergetplayer.not.found: 'Information on the specified player could not be found.'
+addmoney.amount.not.set: 'Please enter the amount to be granted.'
+addmoney.amount.not.numeric: 'Please enter a number to give.'
+addmoney.decimal.error: 'You can not set decimal fractions to the amount to be granted.'
+addmoney.success: 'We have increased %MONITORUNIT%%AMOUNT% of %TERGET% s holdings. Percentage of %TERGET% has become %MONITORUNIT%%MONEY%.'
+
+setmoney.tergetname.not.set: 'Please enter the player name to set the amount of money held.'
+setmoney.tergetplayer.not.found: 'Information on the specified player could not be found.'
+setmoney.amount.not.set: 'Please enter the amount to be set.'
+setmoney.amount.not.numeric: 'Please enter the amount to be set with a number.'
+setmoney.decimal.error: 'You can not set decimal places for the amount to be set.'
+setmoney.success: 'We have set %TERGET% s possessions as %MONITORUNIT%%MONEY%.'
+
+takemoney.tergetname.not.set: 'Please enter the name of the player who forfeits the possession money.'
+takemoney.tergetplayer.not.found: 'Information on the specified player could not be found.'
+takemoney.amount.not.set: 'Please enter the confiscated amount.'
+takemoney.amount.not.numeric: 'Please enter the confiscated amount in numbers.'
+takemoney.decimal.error: 'You can not set the amount of confiscation below the decimal point.'
+takemoney.success: 'We confiscated %MONITORUNIT%%AMOUNT% from %TERGET%. Percentage of %TERGET% has become %MONITORUNIT%%MONEY%.'
+
+setlang.tergetlang.not.set: 'Please enter the language to be set.'
+setlang.language.not.found: 'There is no language %LANGUAGE%.'
+setlang.success: 'I set the language. (English)'
+setlang.error: 'Failed to set language. (Unexpected fatal error)'
+
+moneyrank.not.numeric.error: 'Please fill in the number of pages with numbers.'

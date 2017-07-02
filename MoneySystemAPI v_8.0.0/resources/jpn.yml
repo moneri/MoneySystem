@@ -1,0 +1,57 @@
+lang.name: '日本語'
+
+join.pay: '%GIVEN%から%MONITORUNIT%%AMOUNT%を受け取りました。'
+join.new.player: '初回ログインにより、%MONITORUNIT%%AMOUNT%を付与しました。'
+
+console.not.command: 'このコマンドはコンソールからは実行できません。'
+not.permission: 'あなたはこのコマンドを実行する権限がありません。'
+
+mymoney: 'あなたの所持金は%MONITORUNIT%%MONEY%です。'
+
+see.tergetname.not.set: '所持金を確認するプレイヤー名を入力してください。'
+see.tergetplayer.not.found: '指定したプレイヤーの情報が見つかりませんでした。'
+see.terget.money: '%TERGET%の所持金は%MONITORUNIT%%MONEY%です。'
+
+pay.tergetname.not.set: '所持金を付与するプレイヤー名を入力してください。'
+pay.tergetplayer.not.found: '指定したプレイヤーの情報が見つかりませんでした。'
+pay.amount.not.set: '付与する金額を入力してください。'
+pay.amount.not.numeric: '付与する金額は数字を入力してください。'
+pay.myself.error: '自分自身に付与することはできません。'
+pay.decimal.error: '付与する金額に小数点以下は設定できません。'
+pay.lack.money.error: '所持金が不足しています。'
+pay.0.or.less: '付与する金額は%MONITORUNIT%0以上で設定してください。'
+pay.success.1: '%TERGET%に%MONITORUNIT%%AMOUNT%を付与しました。'
+pay.success.2: '%TERGET%は現在オフラインのため、次回ログイン時に付与されます。'
+pay.success.3: '%USER% => %TERGET% へ %MONITORUNIT%%AMOUNT% を付与しました。'
+pay.success.4: '%USER% から %MONITORUNIT%%AMOUNT% を受け取りました。'
+pay.success.5: '[CONSOLE MONEY SYSTEM] %TERGET%へ%MONITORUNIT%%AMOUNT%を付与しました。'
+
+status.view: 'あなたの現在のステータス: %STATUS%%'
+
+addmoney.tergetname.not.set: '所持金を付与するプレイヤー名を入力してください。'
+addmoney.tergetplayer.not.found: '指定したプレイヤーの情報が見つかりませんでした。'
+addmoney.amount.not.set: '付与する金額を入力してください。'
+addmoney.decimal.error: '付与する金額に小数点以下は設定できません。'
+addmoney.amount.not.numeric: '付与する金額は数字を入力してください。'
+addmoney.success: '%TERGET%の所持金を%MONITORUNIT%%AMOUNT%増やしました。 %TERGET%の所持金が%MONITORUNIT%%MONEY%になりました。'
+
+setmoney.tergetname.not.set: '所持金をセットするプレイヤー名を入力してください。'
+setmoney.tergetplayer.not.found: '指定したプレイヤーの情報が見つかりませんでした。'
+setmoney.amount.not.set: '設定する金額を入力してください。'
+setmoney.amount.not.numeric: '設定する金額は数字で入力してください。'
+setmoney.decimal.error: '設定する金額に小数点以下は設定できません。'
+setmoney.success: '%TERGET%の所持金を%MONITORUNIT%%MONEY%に設定しました。'
+
+takemoney.tergetname.not.set: '所持金を没収するプレイヤー名を入力してください。'
+takemoney.tergetplayer.not.found: '指定したプレイヤーの情報が見つかりませんでした。'
+takemoney.amount.not.set: '没収する金額を入力してください。'
+takemoney.amount.not.numeric: '没収する金額は数字で入力してください。'
+takemoney.decimal.error: '没収する金額に小数点以下は設定できません。'
+takemoney.success: '%TERGET%から%MONITORUNIT%%AMOUNT%を没収しました。%TERGET%の所持金が%MONITORUNIT%%MONEY%になりました。'
+
+setlang.tergetlang.not.set: '設定する言語を入力してください。'
+setlang.language.not.found: '%LANGUAGE%という言語は存在しません。'
+setlang.success: '言語を設定しました。 (日本語)'
+setlang.error: '言語の設定に失敗しました。 (予期せぬ致命的なエラー)'
+
+moneyrank.not.numeric.error: 'ページ数は数字で記入してください。'

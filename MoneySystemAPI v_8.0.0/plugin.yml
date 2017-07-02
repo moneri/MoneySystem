@@ -1,0 +1,76 @@
+name: MoneySystemAPI
+main: metowa1227\MoneySystemAPI\MoneySystemAPI
+version: "8.0.0"
+author: metowa1227
+api:
+- 1.0.0
+- 1.1.0
+- 1.2.0
+- 1.2.1
+- 1.3.0
+- 1.3.1
+- 1.4.0
+- 1.4.1
+- 1.5.0
+- 1.6.0
+- 1.7.0
+- 1.8.0
+- 1.9.0
+- 2.0.0
+description: 新しい経済の要素を追加します。
+commands:
+  mymoney:
+   description: あなたの所持金を確認します。
+   usage: /mymoney
+   permission: money.command.mymoney
+  see:
+    description: 他人の所持金を確認できます。
+    usage: /see <Player>
+    permission: money.command.see
+  pay:
+    description: 他人にお金を渡します。
+    usage: /pay <Player> <Amount>
+    permission: money.command.pay
+  addmoney:
+    description: お金を付与します。
+    usage: /addmoney <Player> <Amount>
+    permission: money.command.addmoney
+  setmoney:
+    description: お金をセットします。
+    usage: /setmoney <Player> <Amount>
+    permission: money.command.set
+  take:
+    description: お金を没収します。
+    usage: /take <Player> <Amount>
+    permission: money.command.take
+  mystatus:
+    description: 自分のステータスを表示します。
+    usage: /mystatus
+    permission: money.command.mystatus
+  setlang:
+    description: MoneySystemでの言語を設定します。
+    usage: /setlang <Language>
+    permission: money.command.setlang
+  moneyrank:
+    description: サーバー内のお金のランキングを表示します。
+    usage: /moneyrank <page>
+    permission: money.command.rank
+permissions:
+  money.command.mymoney:
+    default: true
+  money.command.see:
+    default: true
+  money.command.pay:
+    default: true
+  money.command.addmoney:
+    default: op
+  money.command.set:
+    default: op
+  money.command.take:
+    default: op
+  money.command.mystatus:
+    default: true
+  money.command.setlang:
+    default: true
+  money.command.rank:
+    default: true
