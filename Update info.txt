@@ -66,3 +66,13 @@ MoneySystemAPI version 8.0.0
 ・オートアップデートデスクリプションビューアーを搭載しました。(AutoUpdateDesctiptionViewer)
 ・オートコンフィグアップデーターを搭載しました。(AutoConfigUpdater)
 >>Configのバージョンアップが発生します。ですが、上の機能により、自動的に更新されますので、基本的には弄る必要はありません。(Configファイルの内容は変更されません。)
+
+MoneySystemAPI version 8.0.1
+・様々な不具合を修正
+
+MoneySystemAPI version 8.0.2
+・BackupFiles()関数が正常に動作しないバグを修正。
+・AutoUpdateCheckerとAutoUpdateDescriptionGetterを復活
+・/payコマンドで、所持金が足りなくてもその分を無視して付与できてしまう重大なバグを修正。
+・このアップデートはセキュリティ面での重大なアップデートです。アップデートすることを強く推奨します。
+・重大度: 重大
