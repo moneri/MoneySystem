@@ -1,0 +1,57 @@
+lang.name: '简体中文'
+
+join.pay: '我们收到你根据给定%MONITORUNIT%%AMOUNT。'
+join.new.player: '第一次登录时，%MONITORUNIT%AMOUNT%被授予。'
+
+console.not.command: '此命令不能从控制台运行。'
+not.permission: '您没有权限来执行此命令。'
+
+mymoney: '你的手的钱为%MONITORUNIT%%MONEY%。'
+
+see.tergetname.not.set: '请输入玩家的名字，以确保这笔钱在手。'
+see.tergetplayer.not.found: '为指定玩家信息无法找到。'
+see.terget.money: '％TERGET%在手的钱的%MONITORUNIT%%MONEY%。'
+
+pay.tergetname.not.set: '请输入玩家名字把钱在手。'
+pay.tergetplayer.not.found: '为指定玩家信息无法找到。'
+pay.amount.not.set: '请输入被授予量。'
+pay.amount.not.numeric: '请输入被授予的数字量。'
+pay.myself.error: '它不能被授予自己。'
+pay.decimal.error: '你不能设置小数点量被授予。'
+pay.lack.money.error: '钱藏缺失。'
+pay.0.or.less: '请设置被授予量%MONITORUNIT%0以上。'
+pay.success.1: '百分比%TERGET％的镍％MONITORUNIT%AMOUNT%被授予。'
+pay.success.2: '%TERGET%目前处于脱机状态，将在下次登录时授予。'
+pay.success.3: '％USER％=>%TERGET%被授予至%MONITORUNIT%%AMOUNT%。'
+pay.success.4: '％USER%%MONITORUNIT%%AMOUNT%好评。'
+pay.success.5: '[CONSOLE MONEY SYSTEM] 为了%TERGET%%MONITORUNIT%%AMOUNT%被授予金额。'
+
+status.view: '您当前的状态: %STATUS%%'
+
+addmoney.tergetname.not.set: '请输入玩家名字把钱在手。'
+addmoney.tergetplayer.not.found: '为指定玩家信息无法找到。'
+addmoney.amount.not.set: '请输入被授予量。'
+addmoney.amount.not.numeric: '请输入被授予的数字量。'
+addmoney.decimal.error: '你不能设置小数点量被授予。'
+addmoney.success: '增加的钱%TERGET%共进%MONITORUNIT%%AMOUNT%。%TERGET%在手的钱现在是%MONITORUNIT%%MONEY%。'
+
+setmoney.tergetname.not.set: '请输入玩家名字确定货币在手。'
+setmoney.tergetplayer.not.found: '为指定玩家信息无法找到。'
+setmoney.amount.not.set: '请输入要设置的量。'
+setmoney.amount.not.numeric: '请是在数字输入的资金量设置。'
+setmoney.decimal.error: '你不能设置小数点量进行设置。'
+setmoney.success: '它被设置为在手%MONITORUNIT%%MONEY%的钱%TERGET%。'
+
+takemoney.tergetname.not.set: '请输入球员姓名没收钱在手。'
+takemoney.tergetplayer.not.found: '为指定玩家信息无法找到。'
+takemoney.amount.not.set: '请输入要没收量。'
+takemoney.amount.not.numeric: '请的金额，以通过输入数字被没收。'
+takemoney.decimal.error: '你不能设置小数点的金额将被没收。'
+takemoney.success: '没收来自%TERGET%%MONITORUNIT%%AMOUNT%。 %TERGET%在手的钱现在是%MONITORUNIT%%MONEY%。'
+
+setlang.tergetlang.not.set: '请输入您想设置的语言。'
+setlang.language.not.found: '语言不存在该%LANGUAGE%。'
+setlang.success: '我们所设置的语言。（中国）'
+setlang.error: '它没有设置语言。（意外的致命错误）'
+
+moneyrank.not.numeric.error: '请页数来填充数字。'
