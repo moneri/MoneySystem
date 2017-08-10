@@ -1,3 +1,4 @@
+https://i11.servimg.com/u/f11/19/73/46/03/moneys10.png
 # MoneySystem
 MoneySystemはPocketMine-MPのビルド上で動作する経済機能追加プラグインです。
 これはAPIとして動作するので、様々なアクションを実行することが可能です。
