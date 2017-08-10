@@ -1,0 +1,57 @@
+lang.name: '한국어'
+
+join.pay: '당신은 %GIVEN% 에서 %MONITORUNIT%%AMOUNT% 를 받았습니다.'
+join.new.player: '처음으로 로그인하여 %MONITORUNIT%%AMOUNT% 를 부여했습니다.'
+
+console.not.command: '이 명령은 콘솔에서 실행할 수 없습니다.'
+not.permission: '당신은이 명령을 실행할 수있는 권한이 없습니다.'
+
+mymoney: '당신의 소지금은 %MONITORUNIT%%MONEY% 입니다.'
+
+see.tergetname.not.set: '소지금을 확인하는 플레이어 이름을 입력하십시오.'
+see.tergetplayer.not.found: '지정한 플레이어의 정보를 찾을 수 없습니다.'
+see.terget.money: '%TERGET% 의 소지금은 %MONITORUNIT%%MONEY% 입니다.'
+
+pay.tergetname.not.set: '소지금을 부여하는 플레이어 이름을 입력하십시오.'
+pay.tergetplayer.not.found: '지정한 플레이어의 정보를 찾을 수 없습니다.'
+pay.amount.not.set: '부여 할 금액을 입력하십시오.'
+pay.amount.not.numeric: '부여하는 금액은 숫자를 입력하십시오.'
+pay.myself.error: '자신에게 부여 할 수 없습니다.'
+pay.decimal.error: '부여하는 금액에 소수점 이하는 설정할 수 없습니다.'
+pay.lack.money.error: '소지금이 부족합니다.'
+pay.0.or.less: '부여하는 금액은 %MONITORUNIT%0 이상으로 설정하십시오.'
+pay.success.1: '%TERGET% 에 %MONITORUNIT%%AMOUNT% 를 부여했습니다.'
+pay.success.2: '%TERGET% 는 현재 오프라인 때문에 다음 로그인 할 때 부여됩니다.'
+pay.success.3: '%USER% => %TERGET% 에 %MONITORUNIT%%AMOUNT% 를 부여했습니다.'
+pay.success.4: '%USER% 에서 %MONITORUNIT%%AMOUNT% 를 받았습니다.'
+pay.success.5: '[CONSOLE MONEY SYSTEM] %TERGET% 에 %MONITORUNIT%%AMOUNT% 를 부여했습니다.'
+
+status.view: '현재 상태: %STATUS%%'
+
+addmoney.tergetname.not.set: '소지금을 부여하는 플레이어 이름을 입력하십시오.'
+addmoney.tergetplayer.not.found: '지정한 플레이어의 정보를 찾을 수 없습니다.'
+addmoney.amount.not.set: '부여 할 금액을 입력하십시오.'
+addmoney.amount.not.numeric: '부여하는 금액은 숫자를 입력하십시오.'
+addmoney.decimal.error: '부여하는 금액에 소수점 이하는 설정할 수 없습니다.'
+addmoney.success: '%TERGET% 의 소지금을 %MONITORUNIT%%AMOUNT% 증가했습니다. %TERGET% 의 소지금이 %MONITORUNIT%%MONEY% 가되었습니다.'
+
+setmoney.tergetname.not.set: '소지금을 설정하는 플레이어 이름을 입력하십시오.'
+setmoney.tergetplayer.not.found: '지정한 플레이어의 정보를 찾을 수 없습니다.'
+setmoney.amount.not.set: '설정 금액을 입력하십시오.'
+setmoney.amount.not.numeric: '설정 금액은 숫자로 입력하십시오.'
+setmoney.decimal.error: '설정 금액에 소수점 이하는 설정할 수 없습니다.'
+setmoney.success: '%TERGET% 의 소지금을 %MONITORUNIT%%MONEY% 로 설정했습니다.'
+
+takemoney.tergetname.not.set: '소지금을 몰수하는 플레이어 이름을 입력하십시오.'
+takemoney.tergetplayer.not.found: '지정한 플레이어의 정보를 찾을 수 없습니다.'
+takemoney.amount.not.set: '몰수 할 금액을 입력하십시오.'
+takemoney.amount.not.numeric: '몰수 금액은 숫자로 입력하십시오.'
+takemoney.decimal.error: '몰수 금액에 소수점 이하는 설정할 수 없습니다.'
+takemoney.success: '%TERGET% 에서 %MONITORUNIT%%AMOUNT% 를 몰수했습니다. %TERGET% 의 소지금이 %MONITORUNIT%%MONEY% 가되었습니다.'
+
+setlang.tergetlang.not.set: '원하는 언어를 입력하십시오.'
+setlang.language.not.found: '%LANGUAGE% 라는 언어는 존재하지 않습니다.'
+setlang.success: '언어를 설정했습니다. (한국어)'
+setlang.error: '언어 설정에 실패했습니다. (예상치 못한 치명적인 오류)'
+
+moneyrank.not.numeric.error: '페이지 수는 숫자로 기입하십시오.'
