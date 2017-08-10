@@ -1,0 +1,56 @@
+---
+1:
+  StartX: 254
+  StartZ: 258
+  EndX: 258
+  EndZ: 254
+  Level: life
+2:
+  StartX: 252
+  StartZ: 253
+  EndX: 46
+  EndZ: 259
+  Level: life
+3:
+  StartX: 258
+  StartZ: 258
+  EndX: 254
+  EndZ: 254
+  Level: life
+4:
+  StartX: 253
+  StartZ: 253
+  EndX: 259
+  EndZ: 259
+  Level: life
+5:
+  StartX: 259
+  StartZ: 259
+  EndX: 537
+  EndZ: 253
+  Level: life
+6:
+  StartX: 537
+  StartZ: 253
+  EndX: 519
+  EndZ: 259
+  Level: life
+7:
+  StartX: 537
+  StartZ: 259
+  EndX: 531
+  EndZ: 259
+  Level: life
+8:
+  StartX: 537
+  StartZ: 253
+  EndX: 259
+  EndZ: 259
+  Level: life
+9:
+  StartX: 46
+  StartZ: 253
+  EndX: 537
+  EndZ: 259
+  Level: life
+...

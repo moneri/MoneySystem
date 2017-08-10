@@ -1,7 +1,23 @@
 name: MoneySystemJob
-main: MoneySystemJob\main
-version: 1.6.9
-api: 1.13.0
+main: MoneySystemJob\MoneySystemJob
+version: "3.0.0"
+api: 
+- 1.0.0
+- 2.0.0
+- 3.0.0
+- 4.0.0
+- 5.0.0
+- 6.0.0
+- 7.0.0
+- 8.0.0
+- 9.0.0
+- 10.0.0
+- 11.0.0
+- 12.0.0
+- 13.0.0
+- 14.0.0
+- 15.0.0
+- 16.0.0
 author: metowa1227
 commands:
  job:
@@ -12,19 +28,19 @@ permissions:
  job.cmd.*:
   description: すべてのMoneySystemJobのコマンドを使用できます。
   default: op
+children:
+ job.cmd.:
+  description: jobコマンドを使用できます。
+  default: true
   children:
-   job.cmd.:
-    description: jobコマンドを使用できます。
-    default: true
-    children:
-     join.cmd.:
-      description: 仕事に就けます。
-      default: true
-     out.cmd.:
-      description: 仕事を辞めます。
-      default: true
-     list.cmd.:
-      description: 仕事の一覧を見ることができます。
-      default: true
-     me.cmd.:
-      description: 自分の仕事を確認します。
+ join.cmd.:
+  description: 仕事に就けます。
+  default: true
+ out.cmd.:
+  description: 仕事を辞めます。
+  default: true
+ list.cmd.:
+  description: 仕事の一覧を見ることができます。
+  default: true
+ me.cmd.:
+  description: 自分の仕事を確認します。
