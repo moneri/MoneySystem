@@ -1,0 +1,9 @@
+---
+DefaultMoney: 3000
+MonitorUnit: $
+AddRank.OP: true
+ConfigVersion: 9.000000
+AutoBackup: true
+FirstStarted: true
+DataBaseType: SQLITEFILE
+...
