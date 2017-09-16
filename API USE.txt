@@ -118,6 +118,34 @@ MoneySystem ver 6.0.0 以前 >> 利用不可
 MoneySystem ver 6.0.0 以降 >> isEnable();
 MoneySystem ver 6.0.0 以前 >> 利用不可
 
+プレイヤーの使用中の言語を取得する
+MoneySystem ver 10.5.1 以降 >> getDefaultLang($name);
+MoneySystem ver 10.5.1 以前 >> 利用不可
+※返り値は日本語ならjapanese,英語english,中国語chinese,韓国語korean
+
+言語ファイルから言語データベースを取得する
+MoneySystem ver 10.5.1 以降 >> getMessage($name, $message)
+MoneySystem ver 10.5.1 以前 >> 利用不可
+
+言語が存在するか確認する
+MoneySystem ver 10.5.1 以降 >> ExistsLang($language)
+MoneySystem ver 10.5.1 以前 >> 利用不可
+※返り値はbool
+
+プレイヤーの使用言語を設定する
+MoneySystem ver 10.5.1 以降 >> setPlayerLang($name, $languege)
+MoneySystem ver 10.5.1 以前 >> 利用不可
+
+MoneySystem のデータを保存する
+MoneySystem ver 10.5.1 以降 >> saveData()
+MoneySystem ver 10.5.1 以前 >> 利用不可
+※返り値はbool
+
+MoneySystem が使用しているデータベースの保存形式を取得する
+MoneySystem ver 10.5.1 以降 >> WhichOnlineAccessingDatabaseType()
+MoneySystem ver 10.5.1 以前 >> 利用不可
+※返り値はYAMLファイル形式=YAMLFILE,SQLITE3ファイル形式=SQLITEFILE
+
 デフォルト金額は、上の関数からでも変更できますし、Config.ymlから設定可能です。※MoneySystem ver 5.0.0 以降
 
 通貨の単位が MoneySystem ver 7.3.5 から設定可能になりました。Config.ymlから設定可能です。
