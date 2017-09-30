@@ -1,0 +1,23 @@
+##MoneySystem setting board
+
+##DefaultMoney
+DefaultMoney: 3000
+
+##MonitorUnit
+MonitorUnit: $
+
+##whether the OP in /moneyrank command
+AddRank.OP: true
+
+##ConfigVersion  >> DO NOT EDIT !!! <<
+ConfigVersion: 9.000000
+
+##Backup data files when server startup
+AutoBackup: true
+
+##Select MoneySystem use database file type
+## YOU SELECT FILE IS >> YAMLFILE => .yml >> SQLITEFILE => .db (SQLite3) <<
+DataBaseType: YAMLFILE
+
+##>> DO NOT EDIT !!! <<
+FirstStarted: true
